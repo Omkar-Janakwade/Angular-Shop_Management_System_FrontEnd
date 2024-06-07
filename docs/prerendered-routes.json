@@ -1,0 +1,17 @@
+{
+  "routes": [
+    "/addtransaction",
+    "/admincustransaction",
+    "/adminindex",
+    "/adminlogin",
+    "/adminshoworder",
+    "/admonshowconnection",
+    "/appcomp",
+    "/bookorder",
+    "/customerindex",
+    "/customerlogin",
+    "/getconnection",
+    "/home",
+    "/updateconnection"
+  ]
+}
