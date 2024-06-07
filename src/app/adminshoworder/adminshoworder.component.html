@@ -1,0 +1,63 @@
+<table style="border: 2px solid ;color:black;" *ngIf="isupdateclick">
+    <thead>
+        <th>fullname</th>
+        <th>address</th>
+        <th>mobileno</th>
+        <th>emailid</th>
+        <th>total bottle</th>
+        <th>date</th>
+        <th>provide</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+    <tr *ngFor="let order of bookorderarr">
+        <td>{{order.fullname}}</td>
+        <td>{{order.address}}</td>
+        <td>{{order.mobno}}</td>
+        <td>{{order.emailid}}</td>
+        <td>{{order.totalbottle}}</td>
+        <td>{{order.date}}</td>
+        <td>{{order.provide}}</td>
+        <td><input type="button" class="btn btn-primary" name="addorder" value="add" (click)="addorder()"></td>
+        <td><input type="button" class="btn btn-primary" name="update" value="update" (click)="updateorderclick(order.fullname)"></td>
+        <td><input type="button" class="btn btn-primary" name="delete" value="delete" (click)="deleteorder(order.fullname)"></td>
+        
+        
+    </tr>
+</tbody>
+</table>
+<div>
+    <button class="btn btn-primary" (click)=" gotoadminhome()" >Go To Admin Home</button>
+</div>
+
+<div class="registration-container" *ngIf="isclick">
+    <h2 style="text-align: center;" >Update Order Form</h2>
+    <form>
+      <label for="fullname">FullName:</label>
+      <input type="text" id="fullname" name="fullname" [(ngModel)]="bookorder.fullname" required>
+  
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" [(ngModel)]="bookorder.address" required>
+  
+      <label for="mobno">Mobile No:</label>
+      <input type="number" id="mobno" name="mobno" [(ngModel)]="bookorder.mobno" required>
+  
+      <label for="emailid">Email:</label>
+      <input type="email" id="emailid" name="emailid" [(ngModel)]="bookorder.emailid" required>
+  
+      <label for="totalbottle">Total Bottle:</label>
+      <input type="number" id="totalbottle" name="totalbottle" [(ngModel)]="bookorder.totalbottle" required>
+      
+      <label for="date">Order Date:</label>
+      <input type="date" id="date" name="date" [(ngModel)]="bookorder.date" required>
+
+      <label for="provide">Proivide:</label>
+      <input type="text" id="provide" name="privide" [(ngModel)]="bookorder.provide" required>
+
+      <label style="color: blue;">{{message}}</label>
+      <button type="submit" (click)="updateorder()" >update Order</button> 
+      
+    </form>
+  </div>
+  
+

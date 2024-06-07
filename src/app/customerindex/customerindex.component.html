@@ -1,0 +1,95 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<div>
+
+  <div class="customer-card">
+    <div class="customer-avatar">
+      <img src="assets/avatar.png" alt="Customer Avatar">
+    </div>
+    <div class="customer-details">
+      <h2>{{ getconnection.fullname }}</h2>
+      <p>Email: {{ getconnection.emailid }}</p>
+      <p>Phone: {{ getconnection.mobno }}</p>
+      <p>Address: {{ getconnection.address }}</p>
+      <p>Daily Bottle : {{ getconnection.dailybottle }}</p>
+      <p>Satrting date : {{ getconnection.startdate }}</p>
+      <p><input type="button" class="btn btn-primary" value="Update Password" (click)="updatepassword()"></p>
+      <button class="logout-button" (click)="logout()">Logout</button>
+    </div>
+  </div>
+ 
+  
+  
+  <div>
+    
+    <div class="table-container">
+      <table class="user-table">
+
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Item name</th>
+            <th>quantity</th>
+            <th>Delivered By</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let transaction of transactionarr">
+
+            <td>{{transaction.transactionDate}}</td>
+            <td>{{transaction.itemName}}</td>
+            <td>{{transaction.quantity}}</td>
+            <td>{{transaction.deliveryBoyName}}</td>
+          </tr>
+         
+          
+          
+        </tbody>
+        <tr style="text-align: center;" >
+          <td> <input type="button" name="" id="" class="btn btn-success" value=" calculatequantity"
+           (click)=" calculateTotalQuantity()"></td>
+          <td> <h4>totalQuantity:-{{totalQuantity}}</h4></td>
+        
+         </tr>
+      </table>
+    </div>
+
+  </div>
+
+  <h3 style="text-align: center;"> Our key Features</h3>
+
+  <div class="card">
+    <div class="card-content">
+      <h2 style="text-align: center;">24/7 Service</h2>
+      <p>we provide a 24/7 service because जल है तो कल है</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h2 style="text-align: center;">100 % Safe</h2>
+      <p>Water in nature is very pure, and whatever source it comes from, it always contains impurities in solution or
+        suspension. </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-content">
+      <h2 style="text-align: center;">Home Delivery</h2>
+      <p>once you get connection then we provide you a daily home Service</p>
+    </div>
+  </div>
+
+  <!--
+
+<div class="card-container">
+ 
+  <div class="card">
+    <h2>100% Safe</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo error dolor quibusdam, nesciunt fuga perferendis
+      architecto at quae, laborum enim amet modi. Dolores doloremque qui ullam facilis sunt minima iure repellendus,
+      iste accusantium ipsam?</p>
+  </div>
+</div> -->

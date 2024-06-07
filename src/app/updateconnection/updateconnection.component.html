@@ -1,0 +1,16 @@
+<div class="registration-container">
+    <h2>New Connection Form</h2>
+    
+      <label for="password">Current Password:</label>
+      <input type="text" id="password" name="password" [(ngModel)]="getconnection.password" required>
+
+      <label for="password">New Password:</label>
+      <input type="text" id="password" name="password" [(ngModel)]="newpassword" required>
+
+      <label for="password">Conform New Password:</label>
+      <input type="text"  id="password" name="password" [(ngModel)]="conformnewpassword" required> <br><br>
+  
+      <button type="submit" class="center-container"  (click)="updatepassword()" >Change Password </button><br><br>
+      <button type="submit" class="center-container"  (click)="gotoaccount()" >Go To Account </button>
+</div>
+  

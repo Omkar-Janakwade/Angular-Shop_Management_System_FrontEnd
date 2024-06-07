@@ -1,0 +1,70 @@
+
+
+  <div class="card">
+    <p>get all order</p>
+    <button (click)="showallorder()" class="button">All Order</button>
+</div>
+
+<div class="card">
+    <p>get all connection</p>
+    <button (click)="showallconnection()" class="button">All Connection</button>
+</div>
+
+
+<div class="card">
+  <p>Add customer Transaction </p>
+  <button (click)="addtransaction()" class="button">Add Transaction</button>
+</div>
+
+<div class="card">
+  <p>see transaction of a customer</p>
+  <button (click)="showtransaction()" class="button">Customer Transaction</button>
+</div>
+<div class="customer-card">
+    <div class="button-container">
+      <button (click)="logout()" class="btn btn-primary">Logout</button>
+    </div>
+    <div class="login-container">
+        <h2>Add Admin </h2>
+        <form>
+          <p style="color: red;">{{message}}</p>
+          <label for="name">Name:</label>
+          <input type="name" id="name" name="name" [(ngModel)]="admin.name" required>
+      
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" [(ngModel)]="admin.password" required>
+      
+          <button type="submit" (click)="addadmin()">Add admin</button>
+        </form>
+      </div>
+
+       
+<div>
+    <button type="submit" (click)="alladmin()">GetAll Admin</button>
+  </div>
+
+  <div >
+      <h2>Admin Table</h2>
+  
+  <table>
+    <thead>
+      <tr>
+       
+        <th>Admin Name</th>
+        <th>Admin Password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let admin of adminarr">
+        <td>{{admin.name}}</td>
+        <td>{{admin.password}}</td>
+      
+      </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+
+
+      

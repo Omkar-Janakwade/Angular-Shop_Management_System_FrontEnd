@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  select, input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #548a57;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .form-group {
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    label {
+        font-size: 14px; /* Decrease font size for labels on smaller screens */
+    }
+
+    select, input {
+        font-size: 14px; /* Decrease font size for input fields on smaller screens */
+    }
+
+    button {
+        font-size: 14px; /* Decrease font size for buttons on smaller screens */
+    }
+}
+/* Your existing CSS */
+
+.secondary-btn {
+  background-color: #f44336;
+}
+
+.secondary-btn:hover {
+  background-color: #d32f2f;
+}

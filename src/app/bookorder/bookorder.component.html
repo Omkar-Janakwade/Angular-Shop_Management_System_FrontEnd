@@ -1,0 +1,27 @@
+<div class="registration-container">
+    <h2 style="text-align: center;" >BookOrder  Form</h2>
+    <form>
+      <label for="fullname">FullName:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Fullname" [(ngModel)]="bookorder.fullname" required>
+  
+      <label for="address">Address:</label>
+      <input type="text" id="address" name="address" placeholder="Address" [(ngModel)]="bookorder.address" required>
+  
+      <label for="mobno">Mobile No:</label>
+      <input type="text" id="mobno" name="mobno" placeholder="Mobile No" [(ngModel)]="bookorder.mobno" required>
+  
+      <label for="emailid">Email:</label>
+      <input type="email" id="emailid" name="emailid" placeholder="Email  Id" [(ngModel)]="bookorder.emailid" required>
+  
+      <label for="totalbottle">Total Bottle:</label>
+      <input type="text" id="totalbottle" name="totalbottle" placeholder="Enter Total Bottle" [(ngModel)]="bookorder.totalbottle" required>
+      
+      <label for="date">Order Date:</label>
+      <input type="date" id="date" name="date" [(ngModel)]="bookorder.date" required>
+
+      <label style="color: blue;">{{message}}</label>
+
+      <button type="submit" (click)="bookorderdata()" >Book Order</button>
+    </form>
+  </div>
+  

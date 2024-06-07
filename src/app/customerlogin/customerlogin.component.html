@@ -1,0 +1,16 @@
+<div class="login-container">
+    <h2 style="text-align: center;">Customer Login</h2>
+    <form>
+      <label style="color: blue;">{{message2}}</label>
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" [(ngModel)]="getconnection.fullname" required>
+  
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="getconnection.password" required>
+      <label>{{message}}</label>
+      <button type="submit" (click)="logincustomer()">Login</button>
+    </form>
+    <p class="signup-link">Don't have an account? <a href="getconnection">Sign up</a></p>
+  </div>
+  <router-outlet></router-outlet>
+  

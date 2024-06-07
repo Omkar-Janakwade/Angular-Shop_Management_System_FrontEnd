@@ -1,0 +1,170 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white; /* Set background color to white */
+  color: black; /* Set text color to black */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.navbar-left {
+  display: flexbox;
+  align-items: center;
+}
+
+.navbar-title {
+  margin-right: 20px;
+  font-size: 1.5rem;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right a {
+  color: black; /* Set link color to black */
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline;
+}
+
+.navbar-logo img {
+  /* height: 40px; */
+  width: 50px; /* Adjust the width and height as needed */
+  height: 50px;
+  border-radius: 50%; 
+}
+
+  
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 10px;
+ 
+ 
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #ffd700; /* Change to your desired hover color */
+}
+
+.social-icons {
+  display: flex;
+  padding: 0;
+}
+
+.social-icons li {
+  margin-right: 10px;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+
+ 
+
+/* ... (rest of the styles) */
+
+/* Style for the round container */
+.facebook-icon {
+width: 30px; /* Adjust the size as needed */
+height: 30px;
+border-radius: 40%; /* Make it a circle */
+overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #3b5998; /* Facebook's blue color */
+cursor: pointer;
+}
+
+/* Style for the Facebook logo */
+.facebook-icon img {
+width: 100%; /* Adjust the size of the logo */
+height: auto;
+border-radius: 50%;
+display: block;
+}
+/* Style for the round container */
+.icon-container {
+width: 50px; /* Adjust the size as needed */
+height: 50px;
+border-radius: 50%; /* Make it a circle */
+overflow: hidden;
+display: inline-block; /* Arrange icons horizontally */
+margin-right: 10px; /* Adjust the spacing between icons */
+cursor: pointer;
+}
+
+/* Style for the logos */
+.icon-container img {
+width: 80%; /* Adjust the size of the logos */
+height: auto;
+border-radius: 50%;
+display: block;
+}
+
+
+
+
+
+
+
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  width: calc(33.33% - 20px); /* Adjust the width as needed */
+}
+
+.service h3 {
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 14px;
+}
