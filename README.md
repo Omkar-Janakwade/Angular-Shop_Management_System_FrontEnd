@@ -1,22 +1,35 @@
-## Shop Management System - Frontend
-Project Description
-The frontend of the Shop Management System is built using Angular. It provides a dynamic and responsive user interface for managing water delivery subscriptions, bulk order bookings, and viewing transaction histories. The frontend communicates with the backend API built with Spring Boot to perform these operations.
+# Shop Management System - Frontend
+
+## Project Description
+The frontend of the Shop Management System is developed using Angular. This application provides a user-friendly interface for managing daily water delivery subscriptions, booking bulk orders for events, and viewing transaction history. Administrators have additional functionalities for managing user transactions, monitoring activities, and managing user accounts.
 
 ## Technologies Used
-Framework: Angular (version 17 or Higher)
-Language: TypeScript
-Styling: Bootstrap (for UI styling)
-HTTP Client: HttpClientModule
-State Management: RxJS
-Build Tool: npm
+- **Framework:** Angular
+- **Language:** TypeScript
+- **Build Tool:** Angular CLI
+
 ## Key Features
-User Authentication: Login, registration, and JWT token handling.
-Daily Delivery Subscription: Interface for subscribing to daily water delivery services.
-Bulk Order Booking: Interface for placing bulk orders for events.
-Transaction History: View and manage transaction history.
-Admin Dashboard: Monitor user activities and manage orders.
+### User Functionality
+- **Daily Water Delivery Subscription Management:** Allows users to manage their daily water delivery subscriptions.
+- **Bulk Water Order Booking:** Enables users to book bulk water orders for events.
+- **Transaction History Viewing:** Provides users with a detailed view of their transaction history.
+
+### Admin Functionality
+- **Manage User Transactions:** Administrators can manage and oversee all user transactions.
+- **Monitor Activities:** Administrators can monitor user activities within the system.
+- **Account Management:** Allows administrators to manage user accounts and their permissions.
+
 ## Installation Instructions
-Prerequisites
-Node.js (version 14.x or later)
-npm (version 6.x or later)
-Angular CLI (version 12.x or later
+
+### Prerequisites
+- Node.js and npm installed on your machine
+- Angular CLI installed globally (`npm install -g @angular/cli`)
+
+### Frontend Setup
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Omkar-Janakwade/Angular_Shop_Management_System_Frontend.git
+   cd Angular_Shop_Management_System_Frontend
+## Contact
+For any inquiries, please contact us at janakwadeom@gmail.com.
